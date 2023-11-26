@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.git-hub-icon {
+  color: #252627;
+}
+
+.ukrainian-flag {
+  width: 100%; /* Adjust as needed for the width of the flag */
+  height: 20px; /* Adjust as needed for the height of the flag */
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blue-stripe {
+  flex: 1;
+  background-color: #005bbb; /* Blue color of the flag */
+}
+
+.yellow-stripe {
+  flex: 1;
+  background-color: #ffd500; /* Yellow color of the flag */
+}
