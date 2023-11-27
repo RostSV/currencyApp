@@ -1,7 +1,7 @@
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./layout/Navbar";
-import Home from "./pages/Home";
+import Currencies from "./pages/Currencies";
 import AddCurrency from "./Actions/AddCurrency";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EditCurrency from "./Actions/EditCurrency";
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Welcome />} />
           <Route
             exact
             path="/currencies/addCurrency"
@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/rates" element={<Rates />} />
           <Route exact path="/rates/add" element={<AddRate />} />
           <Route exact path="/exchange" element={<Exchange />} />
-          <Route exact path="/welcome" element={<Welcome />} />
+          <Route exact path="/currencies/show" element={<Currencies />} />
         </Routes>
       </Router>
     </div>

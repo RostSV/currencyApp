@@ -12,7 +12,7 @@ export default function Home() {
   }, []);
 
   const loadCurenices = async () => {
-    const result = await axios.get("http://localhost:8080/");
+    const result = await axios.get("http://localhost:8080/currencies/show");
     setCurencies(result.data);
   };
 

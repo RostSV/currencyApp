@@ -37,7 +37,7 @@ export default function EditCurrency() {
       .catch((error) => {
         alert("Invalid input");
       });
-    navigate("/");
+    navigate("/currencies/show");
   };
 
   const loadCurrency = async () => {

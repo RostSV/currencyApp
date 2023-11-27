@@ -1,6 +1,5 @@
 package com.example.currencyExchange.exchangeRates;
 
-import com.example.currencyExchange.currency.Currency;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,7 +32,6 @@ public class ExchangeRateController {
         return exchangeRateService.updateCurrency(ExchangeRate, id);
 
     }
-
     @DeleteMapping("/rates/delete/{id}")
     public void removeRate(@PathVariable("id") int id){
         exchangeRateService.removeRate(id);

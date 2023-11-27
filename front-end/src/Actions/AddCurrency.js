@@ -33,7 +33,7 @@ export default function AddCurrency() {
         alert("Invalid input");
       });
 
-    navigate("/");
+    navigate("/currencies/show");
   };
 
   return (
@@ -83,7 +83,10 @@ export default function AddCurrency() {
               Submit
             </button>
 
-            <Link className="btn btn-outline-danger mt-2 mx-2" to="/">
+            <Link
+              className="btn btn-outline-danger mt-2 mx-2"
+              to="/currencies/show"
+            >
               Cancel
             </Link>
           </form>

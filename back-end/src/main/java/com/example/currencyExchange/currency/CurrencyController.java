@@ -20,7 +20,7 @@ public class CurrencyController {
         this.currencyService = currencyService;
     }
 
-    @GetMapping("/")
+    @GetMapping("/currencies/show")
     public List<Currency> getCurrencies(){
         return currencyService.getCurrencies();
     }
@@ -47,10 +47,6 @@ public class CurrencyController {
         currencyService.removeCurrency(id);
     }
 
-//    @GetMapping("{code}")
-//    public Currency getCurrencyByCode(@PathVariable("code") String code){
-//        return currencyService.findCurrencyByCode(code);
-//    }
 
     //save
     @PostMapping("/currencies/save")
@@ -62,9 +58,4 @@ public class CurrencyController {
 
         }
     }
-
-
-
-
-
 }

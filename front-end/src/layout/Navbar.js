@@ -5,19 +5,22 @@ export default function () {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/welcome">
+          <a className="navbar-brand" href="/">
             CurrencyExchange
           </a>
 
           <Link className="btn btn-outline-light" to="/currencies/addCurrency">
             Add currency
           </Link>
+          <Link className="btn btn-outline-light" to="/currencies/show">
+            Show currencies
+          </Link>
           <Link className="btn btn-outline-light" to="/rates">
             Show rates
           </Link>
 
           <Link className="btn btn-outline-light" to="/exchange">
-            Echange
+            Exchange
           </Link>
         </div>
       </nav>

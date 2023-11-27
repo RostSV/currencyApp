@@ -33,7 +33,7 @@ public class ExchangeRateService {
                     exchangeRate.setBaseCurrency(ExchangeRate.getBaseCurrency());
                     exchangeRate.setTargetCurrency(ExchangeRate.getTargetCurrency());
                     return exchangeRatesRepository.save(exchangeRate);
-                }).orElseThrow(() -> new RuntimeException());
+                }).orElseThrow(RuntimeException::new);
     }
 
     public void removeRate(int id) {

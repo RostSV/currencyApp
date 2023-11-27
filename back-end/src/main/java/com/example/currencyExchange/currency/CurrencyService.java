@@ -26,13 +26,9 @@ public class CurrencyService {
 
     }
 
-    public Currency findCurrencyByCode(String code){
-        return currencyRepository.findCurrencyByCode(code);
-    }
-
     public Currency findCurrencyById(int id){
         return currencyRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException());
+                .orElseThrow(RuntimeException::new);
     }
 
     public Currency updateCurrency(Currency newCurrency, int id){
@@ -42,7 +38,7 @@ public class CurrencyService {
                     currency.setCode(newCurrency.getCode());
                     currency.setSign(newCurrency.getSign());
                     return currencyRepository.save(currency);
-                }).orElseThrow(() -> new RuntimeException());
+                }).orElseThrow(RuntimeException::new);
 
 
     }
